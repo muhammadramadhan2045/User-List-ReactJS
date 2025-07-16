@@ -14,4 +14,17 @@ Aplikasi frontend sederhana menggunakan React JS untuk menampilkan daftar penggu
 - React Hooks: `useState`, `useEffect`
 - CSS murni (tanpa framework)
 
+## ▶️ Cara Menjalankan
 
+1. **Clone / Download project**
+   ```bash
+   git clone https://github.com/muhammadramadhan2045/User-List-ReactJS.git
+
+2. **Buka project & jalankan perintah**
+   ```bash
+   npm install
+   npm run dev
+
+
+  
+   
