@@ -1,0 +1,249 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem; 
+  background-color: #fff;
+  min-height: 100vh;
+  box-sizing: border-box; /
+} 
+
+
+
+.search-input {
+  width: 95%;
+  padding: 12px 16px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  margin-bottom: 1.5rem; 
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  background-color: #f9f9f9;
+}
+
+.search-input::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+.search-input:focus {
+  border-color: #007bff;
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.1);
+}
+
+
+
+/* User List */
+.user-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.user-item {
+  padding: 12px;
+  margin-bottom: 8px;
+  background-color: #f9f9f9;
+  border-left: 5px solid #007bff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.user-item:hover {
+  background-color: #e9f0ff;
+}
+
+/* Detail Section */
+.user-detail {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #eef6ff;
+  border-left: 4px solid #007bff;
+  border-radius: 6px;
+}
+
+.loading-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  position: fixed;        /* menempel di layar */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: white; /* opsional: putih saat loading */
+  z-index: 9999;
+}
+
+.loading-gif {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 0.75rem;
+  }
+
+  .search-input {
+    font-size: 0.95rem;
+  }
+
+  .user-item {
+    font-size: 0.95rem;
+  }
+
+/* =============================
+   Global Reset & Base Settings
+============================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* =============================
+   Container Layout
+============================= */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background-color: #c0b4b4; /* sesuai warna dari screenshot */
+  min-height: 100vh;
+}
+
+/* =============================
+   Title
+============================= */
+.title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* =============================
+   Search Input
+============================= */
+.search-input {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.search-input::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+.search-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+/* =============================
+   User List
+============================= */
+.user-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.user-item {
+  padding: 12px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border-left: 5px solid #007bff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.user-item:hover {
+  background-color: #e9f0ff;
+}
+
+/* =============================
+   Loading Wrapper
+============================= */
+.loading-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: white;
+  z-index: 9999;
+}
+
+.loading-gif {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 1rem;
+}
+
+/* =============================
+   Responsive Design
+============================= */
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .search-input {
+    font-size: 0.95rem;
+  }
+
+  .user-item {
+    font-size: 0.95rem;
+  }
+
+  .user-detail {
+    font-size: 0.95rem;
+  }
+}
+
+.no-data {
+  text-align: center;
+  font-style: italic;
+  color: #777;
+  padding: 2rem;
+}
+
+
+}
